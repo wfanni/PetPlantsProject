@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+header {
+    width: 100vw;
+    height: 130px;
+    position: fixed;
+    background-color: #f2ffd0;
+    nav {
+        width: inherit;
+        height: inherit;
+        position: inherit;
+        ul {
+            width: inherit;
+            height: inherit;
+            position: inherit;
+
+            list-style: none;
+            font-weight: 500;
+            font-size: 1.5vw;
+            text-transform: uppercase;
+            box-shadow: 0 10px 10px #0000001a;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+                margin: 0 30px;
+                padding: 5px;
+                border: 2px solid transparent;
+                transition: all 0.3s;
+            }
+            #logo {
+                width: 150px;
+            }
+            #logo:hover {
+                transform: scale(1.1);
+            }
+            #version:hover {
+                color: #81559b;
+            }
+            li:hover:not(#logo):not(#version) {
+                border-bottom: 2px solid #81559b;
+                transform: scale(1.1);
+                
+            }
+        }
+    }
+}
+
+#slide {
+    width: 100vw;
+    height: 630px;
+    padding-top: 130px;
+    img {
+        width: inherit;
+
+    }
+}
+
+#available_plants {
+    width: 100vw;
+    height: 500px;
+    margin: 5px;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3 {
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        text-align: center;
+        line-height: 120px;
+    }
+    ul {
+        align-self: stretch;
+        display: flex;
+        justify-content: space-evenly;
+
+        list-style: none;
+
+        margin-bottom: 20px;
+        li {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        li img {
+            width: 200px;
+        }
+        li p {
+            margin: 0;
+            line-height: 30px;
+        }
+        li p.price {
+            align-self: flex-end;
+        }
+    }
+    #showMeMoreBtn {
+        border: 2px solid transparent;
+        transition: border-bottom 0.3s;
+        button {
+            margin: 0;
+            padding: 5px;
+            border: 2px solid transparent;
+            background-color: transparent;
+            font-size: 1.2em;
+            font-weight: 400;
+            font-family: inherit;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            cursor: pointer;
+        }
+    }
+    #showMeMoreBtn:hover {
+        border-bottom: 2px solid #81559b;
+    }
+    
+}
+
+#plant_care_tips {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a#moreTips {
+        width: 75vw;
+
+        div {
+            width: inherit;
+
+            background-color: #daff7daf;
+            h3 {
+                text-align: center;
+                line-height: 40px;
+                font-weight: 500;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+            }
+        }
+    }
+    p {
+        text-align: center;
+        height: 70px;
+        font-size: 1.5em;
+        line-height: 40px;
+    }
+    ul {
+        align-self: stretch;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        list-style: none;
+
+        margin: 50px 0;
+        li img {
+            width: 200px;
+        }
+    }
+}
+
+#decorations {
+    width: 100vw;
+    height: 50px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    img {
+        height: 50px;
+    }
+}
+
+#contact {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    h3 {
+        margin-top: 100px;
+        font-size: 1.3em;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    #box {
+        position: relative;
+        width: 60vw;
+        height: 300px;
+        box-shadow: 0 0 10px #81559b;
+        background-color: #f2ffd049;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        #email {
+            width: 50%;
+            height: 100%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            input {
+                font-family: inherit;
+                font-size: 1.3em;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid #81559b;
+                background-color: transparent;
+            }
+            a {
+                padding: 5px;
+                border: 2px solid #81559b5b;
+                transition: border 0.3s, background-color 0.3s;
+                background-color: #b1ef9b85;
+            }
+            a:hover {
+                border: 2px solid #81559b;
+                background-color: #b1ef9b;
+            }
+            button {
+                font-size: 1.2em;
+                font-family: inherit;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+            
+        }
+        #email::after {
+            content: '';
+            height: 200px;
+            width: 5px;
+            position: absolute;
+            background-color: #81559b;
+            left: 30vw;
+        }
+        #question {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            p {
+                font-size: 1.2em;
+            }
+            #askMeBtn {
+                margin-top: -20px;
+                padding: 5px;
+                border: 2px solid #81559b5b;
+                transition: border 0.3s, background-color 0.3s;
+                background-color: #b1ef9b85;
+            }
+            #askMeBtn:hover {
+                border: 2px solid #81559b;
+                background-color: #b1ef9b;
+            }
+            button {
+                font-size: 1.2em;
+                font-family: inherit;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+            #socials {
+                display: flex;
+                gap: 5px;
+                p {
+                    transform: translateY(-4px);
+                }
+
+                i {
+                    margin: 20px;
+                    transform: scale(2);
+                }
+                .fab {
+                    transition: color 0.3s;
+                }
+                .fa-facebook:hover {
+                    color: #1877f2;
+                }
+                .fa-instagram:hover {
+                    color: #E1306C;
+                }
+                .fa-discord:hover {
+                    color: #7289DA;
+                }
+            }
+
+        }
+    }
+
+}
+
+footer {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+    background-color: #b1ef9b42;
+    img {
+        width: 150px;
+    }
+    p {
+        margin-left: 50px;
+    }
+    div {
+        margin-right: 50px;
+        p {
+            margin-left: 0;
+        }
+    }
+}

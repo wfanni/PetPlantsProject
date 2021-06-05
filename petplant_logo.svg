@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366.2 256.7">
+  <defs>
+    <style>
+      .a {
+        fill: #b2ef9b;
+      }
+
+      .b {
+        fill: #daff7d;
+      }
+
+      .c, .e {
+        font-size: 124.55px;
+      }
+
+      .c {
+        fill: #81559b;
+        font-family: AbrilFatface-Regular, Abril Fatface;
+      }
+
+      .d {
+        letter-spacing: -0.03em;
+      }
+
+      .e {
+        fill: #1d313b;
+        font-family: IndieFlower, Indie Flower;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="a" d="M295.7,110.3C181.2,103,112.9,148.5,94.4,256.7,90.3,251.1,53,199,73.8,149.2c10.3-24.8,30.3-37.6,38.4-42.7C164.4,73.9,245.3,86.1,295.7,110.3Z"/>
+    <path class="b" d="M94.4,256.7C112.9,148.5,181.2,103,295.7,110.3c26.9,12.9,45.2,29.2,45.6,43.9C342.5,195.1,206.1,232.7,94.4,256.7Z"/>
+    <text class="c" transform="translate(0 105.9)"><tspan class="d">P</tspan><tspan x="75.2" y="0">et</tspan></text>
+    <text class="e" transform="translate(47.8 164.2)">Plants</text>
+  </g>
+</svg>
