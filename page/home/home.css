@@ -23,6 +23,7 @@ header {
   height: 130px;
   position: fixed;
   background-color: #f2ffd0;
+  z-index: 10;
 }
 
 header nav {
@@ -147,7 +148,7 @@ header nav ul li:hover:not(#logo):not(#version) {
   width: 200px;
 }
 
-#available_plants ul li p {
+#available_plants ul li a {
   margin: 0;
   line-height: 30px;
 }
@@ -234,8 +235,31 @@ header nav ul li:hover:not(#logo):not(#version) {
   margin: 50px 0;
 }
 
+#plant_care_tips ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
 #plant_care_tips ul li img {
   width: 200px;
+}
+
+#plant_care_tips ul li #HeadlineA {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 40px;
 }
 
 #decorations {
@@ -244,13 +268,13 @@ header nav ul li:hover:not(#logo):not(#version) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #decorations img {
-  height: 50px;
+  height: 80px;
 }
 
 #contact {
@@ -369,7 +393,7 @@ header nav ul li:hover:not(#logo):not(#version) {
           justify-content: space-evenly;
 }
 
-#contact #box #question p {
+#contact #box #question span {
   font-size: 1.2em;
 }
 
@@ -402,9 +426,9 @@ header nav ul li:hover:not(#logo):not(#version) {
   gap: 5px;
 }
 
-#contact #box #question #socials p {
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
+#contact #box #question #socials span {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
 }
 
 #contact #box #question #socials i {
@@ -450,15 +474,23 @@ footer img {
   width: 150px;
 }
 
-footer p {
+footer span {
   margin-left: 50px;
 }
 
 footer div {
   margin-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
 }
 
-footer div p {
+footer div span {
   margin-left: 0;
 }
 /*# sourceMappingURL=home.css.map */

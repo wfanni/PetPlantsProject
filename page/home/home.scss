@@ -20,6 +20,7 @@ header {
     height: 130px;
     position: fixed;
     background-color: #f2ffd0;
+    z-index: 10;
     nav {
         width: inherit;
         height: inherit;
@@ -106,7 +107,7 @@ header {
         li img {
             width: 200px;
         }
-        li p {
+        li a {
             margin: 0;
             line-height: 30px;
         }
@@ -173,8 +174,20 @@ header {
         list-style: none;
 
         margin: 50px 0;
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
         li img {
             width: 200px;
+        }
+        li #HeadlineA {
+            text-align: center;
+            font-size: 1.5em;
+            line-height: 40px;
         }
     }
 }
@@ -184,9 +197,9 @@ header {
     height: 50px;
     
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     img {
-        height: 50px;
+        height: 80px;
     }
 }
 
@@ -263,7 +276,7 @@ header {
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
-            p {
+            span {
                 font-size: 1.2em;
             }
             #askMeBtn {
@@ -287,8 +300,8 @@ header {
             #socials {
                 display: flex;
                 gap: 5px;
-                p {
-                    transform: translateY(-4px);
+                span {
+                    transform: translateY(15px);
                 }
 
                 i {
@@ -325,12 +338,15 @@ footer {
     img {
         width: 150px;
     }
-    p {
+    span {
         margin-left: 50px;
     }
     div {
         margin-right: 50px;
-        p {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        span {
             margin-left: 0;
         }
     }
