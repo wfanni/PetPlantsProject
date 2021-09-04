@@ -1,4 +1,4 @@
-# [PetPlants webshop](https://wfanni.github.io/PetPlantsProject.github.io/)
+# PetPlants webshop
 
 This was my first bigger solo project, it is still work in progress in my free time.
 
